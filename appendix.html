@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All findings — example.com</title>
+<link rel="stylesheet" href="cro_system.css">
+</head>
+<body>
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">E</div>
+    <div>
+      <div class="logo-text">example.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html">Overview</a><a href="social.html">Social</a><a href="roadmap.html">Roadmap</a><a href="technical.html">Technical</a><a href="appendix.html" class="active">Findings</a><a href="methodology.html">Method</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="section">
+    <div class="eyebrow-label">Appendix</div>
+    <h2 class="section-title">Every finding</h2>
+    <p class="section-intro">All 10 findings, ranked. Export as
+      <a href="backlog.csv" style="color:var(--teal)">CSV</a> or
+      <a href="backlog.json" style="color:var(--teal)">JSON</a> for your tracker.</p>
+    <a class="finding-row" href="finding_1_missing_security_headers.html">
+      <div class="finding-thumb"><img src="shot_before_0_missing_security_headers.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>1. Missing security headers</h3>
+        <p>Measured on the live origin: missing HSTS, CSP, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-effort">Medium · 0.1–0.4/1k</span>
+        <span class="badge badge-verified">Measured</span>
+      </div>
+    </a><a class="finding-row" href="finding_2_single_step_funnel_dead_end.html">
+      <div class="finding-thumb"><img src="shot_before_1_single_step_funnel_dead_end.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>2. Single-step funnel dead end</h3>
+        <p>The only call to action on the page is “Learn more”.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-effort">Medium · 0.2–1.0/1k</span>
+        
+      </div>
+    </a><a class="finding-row" href="finding_3_external_link_funnel_dead_end.html">
+      <div class="finding-thumb"><img src="shot_before_2_external_link_funnel_dead_end.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>3. External link funnel dead end</h3>
+        <p>[Learn more](https://iana.org/domains/example)</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-effort">Medium · 0.2–1.0/1k</span>
+        
+      </div>
+    </a><a class="finding-row" href="finding_4_no_value_proposition.html">
+      <div class="finding-thumb"><img src="shot_before_3_no_value_proposition.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>4. No value proposition</h3>
+        <p>This domain is for use in documentation examples without needing permission.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-effort">Low · 0.2–1.0/1k</span>
+        
+      </div>
+    </a><a class="finding-row" href="finding_5_no_competing_ctas.html">
+      <div class="finding-thumb"><img src="shot_before_4_no_competing_ctas.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>5. No competing CTAs</h3>
+        <p>The only call to action on the page is “Learn more”.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-effort">Medium · 0.1–0.4/1k</span>
+        
+      </div>
+    </a><a class="finding-row" href="finding_6_weak_page_metadata.html">
+      <div class="finding-thumb"><img src="shot_before_5_weak_page_metadata.jpg" alt="" loading="lazy" style="object-position:center 50%"></div>
+      <div class="fr-body">
+        <h3>6. Weak page metadata</h3>
+        <p>Measured on the homepage: title 0 chars (15-60 recommended); description 0 chars (70-160 recommended); og:title missing, og:image </p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-effort">Medium · 0.1–0.4/1k</span>
+        <span class="badge badge-verified">Measured</span>
+      </div>
+    </a><a class="finding-row" href="finding_7_missing_trust_signals_above_the_fold.html">
+      <div class="finding-thumb"><img src="shot_home.png" alt="" loading="lazy" style="object-position:center 8%"></div>
+      <div class="fr-body">
+        <h3>7. Missing trust signals above the fold</h3>
+        <p>Measured on the live homepage: no match for returns policy, guarantee, reviews, security badge.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-effort">Medium · 0.2–1.0/1k</span>
+        <span class="badge badge-verified">Measured</span>
+      </div>
+    </a><a class="finding-row" href="finding_8_no_responsive_viewport.html">
+      <div class="finding-thumb"><img src="shot_home_mobile.png" alt="" loading="lazy" style="object-position:center 8%"></div>
+      <div class="fr-body">
+        <h3>8. No responsive viewport</h3>
+        <p>Measured on the mobile render: no &lt;meta name=&quot;viewport&quot;&gt; present.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-urgent">Urgent</span>
+        <span class="badge badge-effort">Medium · 0.4–1.6/1k</span>
+        <span class="badge badge-verified">Measured</span>
+      </div>
+    </a><a class="finding-row" href="finding_9_missing_trust_signals.html">
+      <div class="finding-thumb"><img src="shot_home.png" alt="" loading="lazy" style="object-position:center 8%"></div>
+      <div class="fr-body">
+        <h3>9. Missing trust signals</h3>
+        <p>Measured on the live homepage: no match for returns policy, guarantee, reviews, security badge.</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-high">High</span>
+        <span class="badge badge-effort">Medium · 0.2–1.0/1k</span>
+        <span class="badge badge-verified">Measured</span>
+      </div>
+    </a><a class="finding-row" href="finding_10_generic_cta_label.html">
+      <div class="finding-thumb"><img src="shot_home.png" alt="" loading="lazy" style="object-position:center 8%"></div>
+      <div class="fr-body">
+        <h3>10. Generic CTA label</h3>
+        <p>The only call to action is &#x27;Learn more,&#x27; which does not communicate the offer or next step in a way that clarifies what the visito</p>
+      </div>
+      <div class="fr-meta">
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-effort">Low · 0.1–0.4/1k</span>
+        
+      </div>
+    </a>
+  </div>
+</div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:"></a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+<div class="modal-overlay" id="modal-root"><div class="modal-box"></div></div>
+<script>
+(function(){
+  var root=document.getElementById('modal-root');
+  function close(){root.classList.remove('open');}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-m]');
+    if(b){var t=document.getElementById('m-'+b.getAttribute('data-m'));
+      if(t){root.querySelector('.modal-box').innerHTML=
+        '<button class="modal-close" aria-label="Close">\u00d7</button>'+t.innerHTML;
+        root.classList.add('open');}return;}
+    if(e.target.closest('.modal-close')||e.target===root)close();
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  /* The miniature is markup authored at 1280px, scaled to the card width.
+     Real screenshots on a narrow viewport are stacked at full width instead,
+     so scaling them would shrink them to about a third of the card. The inline
+     transform has to be cleared as well as skipped, because a resize past the
+     breakpoint leaves the previous value behind. */
+  function scale(){
+    var stack=window.matchMedia('(max-width: 700px)').matches;
+    document.querySelectorAll('.card-preview .preview-inner').forEach(function(el){
+      var host=el.parentElement;if(!host)return;
+      if(stack&&el.classList.contains('photo')){
+        el.style.transform='';host.style.height='';return;}
+      var w=host.clientWidth;if(!w)return;
+      var s=w/1280;el.style.transform='scale('+s+')';
+      host.style.height=Math.round(514*s)+'px';});
+  }
+  scale();window.addEventListener('resize',scale);
+  function pos(){
+    document.querySelectorAll('.shot-scroll[data-frac]').forEach(function(el){
+      var img=el.querySelector('img');
+      var go=function(){var f=parseFloat(el.getAttribute('data-frac'))||0;
+        el.scrollTop=f*(el.scrollHeight-el.clientHeight);};
+      if(img&&!img.complete){img.addEventListener('load',go);}else{go();}
+    });
+  }
+  pos();
+})();
+</script>
+</body>
+</html>
