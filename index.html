@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>example.com — CRO Recommendations</title>
+<link rel="stylesheet" href="cro_system.css">
+</head>
+<body>
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">E</div>
+    <div>
+      <div class="logo-text">example.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html" class="active">Overview</a><a href="social.html">Social</a><a href="roadmap.html">Roadmap</a><a href="technical.html">Technical</a><a href="appendix.html">Findings</a><a href="methodology.html">Method</a></nav>
+</header>
+
+<div class="hero">
+  <div class="hero-eyebrow">CRO Page Prioritization</div>
+  <h1>Where the Conversion<br>Leaks Are</h1>
+  <p>The homepage&#x27;s single external &#x27;Learn more&#x27; link to iana.org is the most valuable conversion mechanism on this site, but it bleeds value by terminating the funnel with no internal next step, no value proposition, and no trust signals, causing visitors to leave without any path to conversion.</p>
+  <div class="hero-meta">
+    <span>7 analysts</span><span class="dot"></span>
+    <span>['/'] pages</span><span class="dot"></span>
+    <span>10 findings</span><span class="dot"></span>
+    <span><a href="roadmap.html" style="color:var(--teal);text-decoration:none">4-week roadmap →</a></span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="section" style="padding-top:0">
+    <div class="scorecard">
+      <div class="grade-dial">
+        <div class="grade-letter">B</div>
+        <div class="grade-score">85 / 100 overall</div>
+        <button class="explain" data-m="grade">How is this calculated?</button>
+      </div>
+      <div class="surface-rows">
+        <div class="surface-legend">Per-surface grade — longer bar means more
+          conversion risk found on that surface</div>
+        <div class="surface-row"><div class="sname">Homepage</div><div class="bar-track"><div class="bar-fill warn" style="width:72%"></div></div><div class="sgrade">C</div></div><div class="surface-row"><div class="sname">Mobile</div><div class="bar-track"><div class="bar-fill warn" style="width:75%"></div></div><div class="sgrade">C</div></div><div class="surface-row"><div class="sname">Trust &amp; Proof</div><div class="bar-track"><div class="bar-fill " style="width:80%"></div></div><div class="sgrade">B</div></div><div class="surface-row"><div class="sname">Site-Wide Security</div><div class="bar-track"><div class="bar-fill " style="width:95%"></div></div><div class="sgrade">A</div></div><div class="surface-row"><div class="sname">Site-Wide Seo</div><div class="bar-track"><div class="bar-fill " style="width:95%"></div></div><div class="sgrade">A</div></div><div class="surface-row"><div class="sname">Primary Call-To-Action Button</div><div class="bar-track"><div class="bar-fill " style="width:95%"></div></div><div class="sgrade">A</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0;border-top:none">
+    <div class="tiles">
+      <div class="tile"><div class="tval">1.8 – 8.2</div>
+        <div class="tlabel">orders per 1,000 visitors</div><button class="explain" data-m="opp">How is this calculated?</button></div>
+      <div class="tile"><div class="tval">5</div>
+        <div class="tlabel">Verified by measurement</div><button class="explain" data-m="ver">What counts as verified?</button></div>
+      <div class="tile"><div class="tval">1</div><div class="tlabel">Urgent</div><div class="tnote">Blocking or misrepresenting the primary path.</div></div>
+      <div class="tile"><div class="tval">2</div>
+        <div class="tlabel">Shippable this week</div>
+        <div class="tnote">Low-effort changes — start here.</div></div>
+    </div>
+    <div class="coverage"><strong>Also examined, no material issue found:</strong> Form &amp; Interaction Friction, Trust &amp; Social Proof, Pricing &amp; Cost Transparency and Navigation &amp; Information Scent. The grade reflects the findings that survived this run’s integrity checks — it is a snapshot of this audit, not a fixed property of the site.</div>
+    <div class="dl-row">
+      <a class="btn-dl" href="executive-summary.pdf" download>Executive summary (PDF)</a>
+      <a class="btn-dl" href="report-deck.pptx" download>Slide deck (PPTX)</a>
+      <a class="btn-dl" href="backlog.csv" download>Backlog (CSV)</a>
+      <a class="btn-dl" href="backlog.json" download>Backlog (JSON)</a>
+    </div>
+  </div>
+</div>
+
+<div class="cards-section">
+  <div class="section-label">Before &amp; After — click any card for evidence, math and the dev spec</div>
+  <div class="cards"><a class="card" href="finding_1_missing_security_headers.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_0_missing_security_headers.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_0_missing_security_headers.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-medium">1</div>
+          <div class="priority-label label-medium">Medium</div>
+        </div>
+        <h2>Missing security headers</h2>
+        <p>6 of 6 standard security headers are absent, which weakens protection against XSS, clickjacking and downgrade attacks.</p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Medium effort</span><span class="badge badge-verified">Measured</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a><a class="card" href="finding_2_single_step_funnel_dead_end.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_1_single_step_funnel_dead_end.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_1_single_step_funnel_dead_end.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-high">2</div>
+          <div class="priority-label label-high">High</div>
+        </div>
+        <h2>Single-step funnel dead end</h2>
+        <p>The page offers only one call to action that exits the site, leaving no defined next step in a conversion path.</p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Medium effort</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a><a class="card" href="finding_3_external_link_funnel_dead_end.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_2_external_link_funnel_dead_end.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_2_external_link_funnel_dead_end.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-high">3</div>
+          <div class="priority-label label-high">High</div>
+        </div>
+        <h2>External link funnel dead end</h2>
+        <p>The only call to action navigates away from the domain to iana.org, terminating the conversion path without any return or continuation optio</p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Medium effort</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a><a class="card" href="finding_4_no_value_proposition.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_3_no_value_proposition.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_3_no_value_proposition.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-high">4</div>
+          <div class="priority-label label-high">High</div>
+        </div>
+        <h2>No value proposition</h2>
+        <p>The page copy only describes the domain&#x27;s purpose for documentation examples and provides no statement of what is sold or why it is better f</p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Low effort</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a><a class="card" href="finding_5_no_competing_ctas.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_4_no_competing_ctas.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_4_no_competing_ctas.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-medium">5</div>
+          <div class="priority-label label-medium">Medium</div>
+        </div>
+        <h2>No competing CTAs</h2>
+        <p>The page has exactly one call to action, so there is no ambiguity from competing options, but this also means the funnel has no alternative </p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Medium effort</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a><a class="card" href="finding_6_weak_page_metadata.html">
+      <div class="card-preview photo"><div class="preview-inner photo">
+        <div class="preview-half">
+          <div class="preview-bar bar-red">Current</div><div class="shotwrap"><img class="shot" src="shot_before_5_weak_page_metadata.jpg" alt="" loading="lazy"></div>
+        </div>
+        <div class="preview-divider"></div>
+        <div class="preview-half">
+          <div class="preview-bar bar-green">Recommended</div>
+          <div class="shotwrap"><img class="shot" src="shot_after_5_weak_page_metadata.jpg" alt="" loading="lazy"></div>
+        </div>
+      </div></div>
+      <div class="card-body">
+        <div class="card-priority">
+          <div class="priority-num num-medium">6</div>
+          <div class="priority-label label-medium">Medium</div>
+        </div>
+        <h2>Weak page metadata</h2>
+        <p>Search and social previews are degraded: page title (absent), meta description, Open Graph tags are missing or outside recommended lengths.</p>
+        <div class="badge-row" style="margin-bottom:14px"><span class="badge badge-effort">Medium effort</span><span class="badge badge-verified">Measured</span></div>
+        <span class="card-link">Full analysis <span class="arrow">→</span></span>
+      </div></a></div>
+</div>
+
+<div class="wrap">
+<div class="section">
+  <div class="eyebrow-label">Voice of customer</div>
+  <h2 class="section-title">What customers actually say</h2>
+  <p class="section-intro">Gathered from third-party reviews, forums and video —
+    the site’s own pages are excluded. Every quote was verified word-for-word
+    against the page it links to; anything that could not be verified was
+    discarded rather than paraphrased.</p>
+  <h3 class="sub-title">Said before buying — these are conversion problems</h3><div class="voice-grid"><div class="voice-card"><div class="voice-theme">Hidden fees and surprise charges</div><blockquote class="voice-quote">Hidden fees can significantly impact your marketing budget and can lead to unexpected financial burdens.</blockquote><div class="voice-src">— <a href="https://fastercapital.com/keyword/potential-additional-charges.html" target="_blank" rel="noopener">fastercapital.com</a></div><div class="voice-means">Prospects are deterred by unexpected costs revealed late, undermining trust and increasing cart abandonment.</div></div><div class="voice-card"><div class="voice-theme">Misleading advertised prices</div><blockquote class="voice-quote">The user is enticed with a low advertised price. After investing time and effort, they discover unexpected fees and charges when they reach the checkout.</blockquote><div class="voice-src">— <a href="https://deceptive.design/types/hidden-costs" target="_blank" rel="noopener">deceptive.design</a></div><div class="voice-means">Customers feel deceived when the final price differs from the advertised one, leading to distrust and negative reviews.</div></div><div class="voice-card"><div class="voice-theme">Confusing pricing structures</div><blockquote class="voice-quote">Other ways some businesses tend to overcomplicate pricing include hidden fees, inconsistent pricing across channels, frequent price changes, convoluted bundling, and confusing loyalty programs.</blockquote><div class="voice-src">— <a href="https://www.netsuite.com/portal/resource/articles/crm/pricing-mistakes.shtml" target="_blank" rel="noopener">netsuite.com</a></div><div class="voice-means">Complex pricing with hidden fees or inconsistent rates confuses customers and complicates their decision-making.</div></div><div class="voice-card"><div class="voice-theme">Unclear refund policies</div><blockquote class="voice-quote">If your refund policy is unclear, it can harm customer experience and make your roadmap for processing requests difficult.</blockquote><div class="voice-src">— <a href="https://www.squarespace.com/blog/refund-policy-example" target="_blank" rel="noopener">squarespace.com</a></div><div class="voice-means">Ambiguous return or refund terms create anxiety before purchase and can deter potential buyers.</div></div><div class="voice-card"><div class="voice-theme">Unexpected fees at checkout</div><blockquote class="voice-quote">Junk fees are unexpected, hidden, or mandatory charges added to the advertised price of a product or service, often revealed late in the checkout process or after the purchase.</blockquote><div class="voice-src">— <a href="https://www.alliantcreditunion.org/money-mentor/junk-fees-how-you-can-avoid-or-minimize" target="_blank" rel="noopener">alliantcreditunion.org</a></div><div class="voice-means">Surprise fees at the final step of purchase lead to frustration and abandoned carts, as customers feel trapped.</div></div><div class="voice-card"><div class="voice-theme">Lack of upfront transparency</div><blockquote class="voice-quote">New rules now force upfront transparency for live events and short term lodging, but consumers still benefit from vigilance elsewhere: compare final prices, read disclosures, ask questions, and report deceptive practices.</blockquote><div class="voice-src">— <a href="https://www.alliantcreditunion.org/money-mentor/junk-fees-how-you-can-avoid-or-minimize" target="_blank" rel="noopener">alliantcreditunion.org</a></div><div class="voice-means">Customers expect total price transparency from the start; hidden costs damage trust and increase perceived risk.</div></div></div>
+</div></div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:"></a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+<div class="modal-overlay" id="modal-root"><div class="modal-box"></div></div>
+<template id="m-grade"><h3>How the grade is calculated</h3><p>Each surface starts at 100. The worst issue costs its full penalty — Urgent 25, High 12, Medium 5 — and each further issue costs 30% less than the one before, because the fifth problem on a page does not damage it as much as the first.</p><div class="formula">surface = 100 − Σ penalty × 0.7ⁱ&nbsp;&nbsp;(worst first)
+overall = mean of surface scores</div><table><tr><th>Surface</th><th>Urgent</th><th>High</th><th>Score</th><th>Grade</th></tr><tr><td>Homepage</td><td class='num'>0</td><td class='num'>4</td><td class='num'>72</td><td class='num'>C</td></tr><tr><td>Mobile</td><td class='num'>1</td><td class='num'>0</td><td class='num'>75</td><td class='num'>C</td></tr><tr><td>Trust &amp; Proof</td><td class='num'>0</td><td class='num'>2</td><td class='num'>80</td><td class='num'>B</td></tr><tr><td>Site-Wide Security</td><td class='num'>0</td><td class='num'>1</td><td class='num'>95</td><td class='num'>A</td></tr><tr><td>Site-Wide Seo</td><td class='num'>0</td><td class='num'>1</td><td class='num'>95</td><td class='num'>A</td></tr><tr><td>Primary Call-To-Action Button</td><td class='num'>0</td><td class='num'>1</td><td class='num'>95</td><td class='num'>A</td></tr></table><p>Grades: A 90+, B 80+, C 70+, D 60+, F below 60.</p></template><template id="m-opp"><h3>How the total is calculated</h3><p>The sum of every finding's individual range. Each row is traffic × conversion × assumed lift band × order value:</p><table><tr><th>Finding</th><th>Lift band</th><th>Range</th></tr><tr><td>Missing security headers</td><td class='num'>0.5–2.0%</td><td class='num'>0.1–0.4/1k</td></tr><tr><td>Single-step funnel dead end</td><td class='num'>1.0–5.0%</td><td class='num'>0.2–1.0/1k</td></tr><tr><td>External link funnel dead end</td><td class='num'>1.0–5.0%</td><td class='num'>0.2–1.0/1k</td></tr><tr><td>No value proposition</td><td class='num'>1.0–5.0%</td><td class='num'>0.2–1.0/1k</td></tr><tr><td>No competing CTAs</td><td class='num'>0.5–2.0%</td><td class='num'>0.1–0.4/1k</td></tr><tr><td>Weak page metadata</td><td class='num'>0.5–2.0%</td><td class='num'>0.1–0.4/1k</td></tr><tr><td>Missing trust signals above the fold</td><td class='num'>1.0–5.0%</td><td class='num'>0.2–1.0/1k</td></tr><tr><td>No responsive viewport</td><td class='num'>2.0–8.0%</td><td class='num'>0.4–1.6/1k</td></tr><tr><td>Missing trust signals</td><td class='num'>1.0–5.0%</td><td class='num'>0.2–1.0/1k</td></tr><tr><td>Generic CTA label</td><td class='num'>0.5–2.0%</td><td class='num'>0.1–0.4/1k</td></tr></table><p><strong>No traffic or order-value figures were supplied</strong>, so the total is a per-1,000-visitor rate against an assumed 2% baseline. Supply real figures and this becomes a dollar range.</p><p><strong>Caveat that applies to every row:</strong> Across 127,000 experiments, 12% produced a statistically significant improvement on the primary metric; a healthy programme win rate is 10-30%. These are prizes if changes work, not forecasts.</p></template><template id="m-ver"><h3>What &#x27;verified&#x27; means</h3><p>A verified finding was measured directly — real-user field data, security headers, accessibility defects counted in the markup — and is reproducible by anyone. Everything else is expert inspection: valuable, but a hypothesis until tested.</p></template><script>
+(function(){
+  var root=document.getElementById('modal-root');
+  function close(){root.classList.remove('open');}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-m]');
+    if(b){var t=document.getElementById('m-'+b.getAttribute('data-m'));
+      if(t){root.querySelector('.modal-box').innerHTML=
+        '<button class="modal-close" aria-label="Close">\u00d7</button>'+t.innerHTML;
+        root.classList.add('open');}return;}
+    if(e.target.closest('.modal-close')||e.target===root)close();
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  /* The miniature is markup authored at 1280px, scaled to the card width.
+     Real screenshots on a narrow viewport are stacked at full width instead,
+     so scaling them would shrink them to about a third of the card. The inline
+     transform has to be cleared as well as skipped, because a resize past the
+     breakpoint leaves the previous value behind. */
+  function scale(){
+    var stack=window.matchMedia('(max-width: 700px)').matches;
+    document.querySelectorAll('.card-preview .preview-inner').forEach(function(el){
+      var host=el.parentElement;if(!host)return;
+      if(stack&&el.classList.contains('photo')){
+        el.style.transform='';host.style.height='';return;}
+      var w=host.clientWidth;if(!w)return;
+      var s=w/1280;el.style.transform='scale('+s+')';
+      host.style.height=Math.round(514*s)+'px';});
+  }
+  scale();window.addEventListener('resize',scale);
+  function pos(){
+    document.querySelectorAll('.shot-scroll[data-frac]').forEach(function(el){
+      var img=el.querySelector('img');
+      var go=function(){var f=parseFloat(el.getAttribute('data-frac'))||0;
+        el.scrollTop=f*(el.scrollHeight-el.clientHeight);};
+      if(img&&!img.complete){img.addEventListener('load',go);}else{go();}
+    });
+  }
+  pos();
+})();
+</script>
+</body>
+</html>
